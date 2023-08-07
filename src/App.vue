@@ -36,7 +36,7 @@ export default {
     };
   },
   mounted() {
-    axios.get('http://149.102.154.14:3000/api/getAllMedsData')
+    axios.get('http://149.102.154.14:3000/getAllMedsData')
         .then(response => {
           this.medsData = response.data;
         })
