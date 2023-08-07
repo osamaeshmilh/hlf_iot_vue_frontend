@@ -41,7 +41,7 @@ export default {
     this.fetchData();
     this.interval = setInterval(this.fetchData, 1000); // Fetch data every second
   },
-  beforeDestroy() {
+  beforeUnmount() {
     clearInterval(this.interval); // Clear interval when component is destroyed
   },
   methods: {
