@@ -36,7 +36,7 @@ export default {
     };
   },
   mounted() {
-    axios.get('http://localhost:3000/your-endpoint-path')
+    axios.get('http://149.102.154.14:3000/api/getAllMedsData')
         .then(response => {
           this.medsData = response.data;
         })
